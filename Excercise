@@ -1,0 +1,21 @@
+# rock paper scissors
+"""rock > scissors
+    scissors > paper
+    paper > rock
+    paper < scissors < rock"""
+# print('Congratulations to the winner')
+
+n = 0
+
+while n < 3:
+    player1 = input("Co wybierasz?: ")
+    player2 = input("Co wybierasz?: ")
+    if player1 == 'paper' and player2 == 'scissors':
+        print('Congratulations to the player2')
+    elif player1 == 'scissors' and player2 == 'rock':
+        print('Congratulations to the player2')
+    elif player1 == 'rock' and player2 == 'paper':
+        print('Congratulations to the player2')
+    else:
+        print('Congratulations to the player1')
+    n = n + 1

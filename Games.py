@@ -89,7 +89,7 @@ elif menu == "3":
                   [2, 1, 0],
                   [3, 3, 3]]
         result_index = result[choice_index][computer_index]
-        result_message = ["Szorstko", "You win", "You lose"]
+        result_message = ["Dubel", "Wygrałeś", "Przegrałeś"]
         koniec = result_message[result_index]
         print(koniec)
 

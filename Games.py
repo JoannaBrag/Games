@@ -13,9 +13,9 @@ if menu == "1":    # Bulls and Cows
             comp_number = random.randrange(0, 9)
             number.append(comp_number)
 
-        if len(number) > len(set(number)):  #wskazuje, że w liście jest duplikat
-            number.clear()      #usuwa listę, ponieważ pojawił się duplikat
-            maszyna_losująca()  # zaczyna od nowa, szuka listy bez duplikatów
+        if len(number) > len(set(number)):  
+            number.clear()      
+            maszyna_losująca()  
 
     def user():
         global attempts
@@ -68,7 +68,7 @@ elif menu == "2":    #Roll a dice
             exit()
     game_menu()
 
-elif menu == "3":   #Rock paper scissors
+elif menu == "3":   
     print("Witaj w Rock paper scissors")
 
     count = 0
@@ -93,39 +93,4 @@ elif menu == "3":   #Rock paper scissors
         koniec = result_message[result_index]
         print(koniec)
 
-
-
-    # Familiada
-    import random
-
-    lista = []
-    occure = {}
-
-
-    def familiada():
-        computer = open("Nowy.txt", "r")
-        for line in computer:
-            s = (line.split(" "))
-            for i in s:
-                lista.append(i)
-            choice = random.choice(lista)
-        for i in choice:
-            occure[i] = occure.get(i, 0) + 1
-            # print(i, ": ", occure[i])
-
-
-    def user():
-        count = 0
-        user_input = input("Zgadnij literę: ")
-        if user_input in occure:
-            print(("Bardzo dobrze. Litera {} zawiera się w słowie {} razy").format(user_input, occure[user_input]))
-            count = count + 1
-
-        if user_input not in occure:
-            print("Nie ma tej litery w słowie. Próbuj dalej")
-        user()
-
-
-    familiada()
-    user()
 menu()

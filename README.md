@@ -6,7 +6,4 @@ Three games with menu:
 2. Roll a dice 
 3. Rock paper scissors
 
-# Raw_RockPaperScissors
---inside--
-
-Raw version of Rock paper scissors including If...Else statements and Logical Operators
+Projects based purely on Python. 
